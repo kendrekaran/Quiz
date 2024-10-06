@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="leftNav"> 
+      <h4>QuizifyCode</h4> 
+    </div>
+    <div class="rightNav">
+      <button onclick="start()" id="strBtn" >Start Now</button>
+    </div>
+  </nav>
+
+
+    <div class="welcome" id="welcome">
+        <section class="section1">
+            <div class="leftSection1">
+              <div>Free Quiz For Pracitce</div>
+              <h2>
+                Check Your Coding <br />
+                Knowledge By <br />
+                Taking this Quiz
+              </h2>
+              <button onclick="start()" id="strBtn" >Start Quiz</button>
+            </div><br>
+            <div class="rightSection1">
+              <img src="images/code1.png" alt="section1 image" />
+            </div>
+          </section>
+    </div>
+
+    <div class="startCard" id="startCard">
+        <h3>Challenge yourself and master the fundamentals of programming<br>
+              Dive deep into the basics today; build the future you dream of tomorrow.</h3>
+        <button onclick="start()" id="strBtn" >Start Quiz</button>
+    </div>
+
+    <div id="welcome2">
+      <section class="section2">
+        <h3>Why Take This Quiz?</h3>
+        <p>Embark on a journey to assess your coding knowledge across various programming languages and web development technologies. 
+          This quiz is perfect for honing your skills, preparing for interviews, or simply challenging yourself!
+          Start by choosing a language or technology you're familiar with, or venture into new territories to broaden your understanding.
+          Each question is designed to test your fundamentals, problem-solving abilities, and familiarity with real-world coding practices.
+          Whether you're a beginner eager to learn the basics or an experienced coder looking to refresh your skills, 
+          our quizzes offer a wide range of difficulty levels to suit your needs.
+          From JavaScript and Python to HTML, CSS, and beyond, we've got you covered. 
+          Track your progress, see your scores, and identify areas where you can improve.
+          Join our community of learners, and let’s code our way to success together! 
+          Happy quizzing, and remember: every line of code takes you one step closer to becoming a master coder!</p>
+       
+        <img src="images/code2.png" alt="Why Take Quiz Image" class="quiz-image">
+      </section>
+
+
+      <section class="section3">
+        <h3>How It Works</h3>
+        <p>Our quiz features multiple-choice questions across essential coding topics, including JavaScript, HTML, CSS, and general programming principles. Dive deep into each topic and assess your understanding of the foundational aspects of coding. Whether you're brushing up on your skills or testing your knowledge, our questions are designed to make you think critically and apply what you've learned.<br><br>
+
+          Simply click the ‘Start Quiz’ button when you're ready. Track your progress, review your answers, and instantly see your results upon completion! Each quiz attempt provides valuable insights and helps you identify areas for improvement. Get ready to code, learn, and excel—your journey to mastering the fundamentals starts here!</p>
+        
+        <img src="images/code3.png" alt="How Quiz Works Image" class="quiz-image">
+      </section>
+    </div>
+
+    <div class="card" id="quizcard" style="display: none;">
+        <h2 id="question" style="display: none;"></h2>
+        <form id="opt"  style="display: none;">
+            <label><input type="radio" name="answer" value="a"><span id="optiona"></span></label><br>
+            <label><input type="radio" name="answer" value="b"><span id="optionb"></span></label><br>
+            <label><input type="radio" name="answer" value="c"><span id="optionc"></span></label><br>
+            <label><input type="radio" name="answer" value="d"><span id="optiond"></span></label><br>
+        </form>
+        <div class="btns">
+            
+            <button onclick="result()" id="resBtn" style="display: none;">Submit</button>
+            <button onclick="reset()" id="rstBtn" style="display: none;">Reset</button>
+        </div>
+        <div class="completedScreen">
+            <p id="complete" style="display: none;"></p>
+            <p id="dispScore" style="display: none;"></p>
+            <button onclick="reset()" id="restart" class="rst" style="display: none;">Restart</button>
+        </div>
+        <div class="liveUpd">
+            <div id="timer" style="display:none;"></div>
+            <p id="result" style="display: none;"></p>
+            <p id="exit" style="display: none;"></p>
+            <p id="score" style="display: none;">Score : 0</p>
+        </div>
+        
+    </div>
+
+    <footer class="footer" id="footer">
+      <p>&copy; 2024 CodeQuiz. All Rights Reserved.</p>
+    </footer>
+
+    <script src="quizData.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html> 

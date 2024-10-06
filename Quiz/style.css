@@ -1,0 +1,235 @@
+* {
+  font-family: "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+    color: #ffffff;
+  }
+
+  .welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .navbar {
+    height: 50px;
+    margin: 0 auto;
+    padding: 0px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    border-bottom: 1px solid rgb(1, 0, 0);
+    background-color: #020202; /* Ensure the navbar has a background color to cover content behind it */
+  }
+  
+  .navbar .leftNav h4{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .navbar .rightNav button{
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 15px;
+  }
+
+  .section1 {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 60px 5% 100px 5%;
+    border-bottom: 1px solid rgb(1, 0, 0);
+    background-color: #171515;
+  }
+
+  .section1 .leftSection1 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .section1 .leftSection1 button {
+    width:300px;
+    background-color: #eff2f4;
+    height: 40px;
+  }
+  
+  .section1 .leftSection1 div {
+    border: 0.1px solid rgb(36, 36, 36);
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: rgb(246, 242, 242);
+    opacity: 0.7;
+    background-color: #242424;
+  }
+  
+  .section1 .leftSection1 h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(235, 227, 227);
+  }
+  
+  .section1 .rightSection1 {
+    width: 60%;
+  }
+  
+  .section1 .rightSection1 img {
+    width: 100%;
+  }
+
+  .section2, .section3 {
+    width: 50%;
+    background-color: rgb(248, 249, 251);
+    color: #0a0a0a;
+    text-align: left;
+    margin: 50px auto 10px;
+    border-radius: 20px;
+    padding : 40px 35px;
+  }
+
+  .section2 img, .section3 img {
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 5px;
+  }
+
+  .section2 h3, .section3 h3 {
+    font-size: 2rem;
+    color: #333;
+  }
+
+  .section2 p, .section3 p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .startCard{
+    width: 80%;
+    background-color: rgb(31, 37, 51);
+    text-align: center;
+    margin: 50px auto 10px;
+    border-radius: 20px;
+    padding : 40px 35px;
+  }
+
+  .startCard  button {
+    width:50%;
+    background-color: #eff2f4;
+    height: 40px;
+  }
+
+  .startCard  h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(235, 227, 227);
+  }
+ 
+  .btns {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+    text-align: center;
+    }
+  
+  .card{
+    width: 50%;
+    max-width: 370px;
+    background-color: rgba(224, 221, 221, 0.696);
+    color:black;
+    margin: 100px auto 100px ;
+    border-radius: 20px;
+    padding : 40px 35px;
+  }
+
+  h2{
+    color:black;
+  }
+
+  .opt{
+    text-align: left;
+
+  }
+  
+  .completedScreen{
+    text-align: center;
+  }
+
+  .liveUpd{
+    color:rgb(40, 37, 34);
+    text-align: center;
+  }
+ 
+  button {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    box-sizing: border-box;
+    color: #0f1111;
+    cursor: pointer;
+    display: inline-block;
+
+    font-size: 13px;
+    line-height: 29px;
+    padding: 0 10px 0 11px;
+    position: relative;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 100px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  
+  button:hover {
+    background-color: #f7fafa;
+  }
+  
+  button:focus {
+    border-color: #008296;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    outline: 0;
+  }
+
+  .footer {
+    width: 100%;
+    background-color: #020202;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+    border-top: 1px solid #333;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .footer p {
+      margin: 0.5px;
+      font-size: 14px;
+  }
+
+
